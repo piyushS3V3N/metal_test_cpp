@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+f93e92dbea98829fe07dfcc2d6a59cf7 default.metallib
+c07ddb9a34feb55188100c495f9e44c7 shaders.metallib

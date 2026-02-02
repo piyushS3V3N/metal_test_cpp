@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['main_0',['main',['../main_8mm.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.mm']]],
+  ['main_2emm_1',['main.mm',['../main_8mm.html',1,'']]],
+  ['make_5fcamera_2',['make_camera',['../camera_8hpp.html#a5143e6c842b667524b9f265f5cfce3bd',1,'camera.hpp']]],
+  ['matrix_5flook_5fat_5fright_5fhand_3',['matrix_look_at_right_hand',['../camera_8hpp.html#ac9496cf97ae5f9faf5c2325a5a1a1408',1,'camera.hpp']]],
+  ['matrix_5fperspective_5fright_5fhand_4',['matrix_perspective_right_hand',['../camera_8hpp.html#a801db073b79006ab06f52827fee67f9d',1,'camera.hpp']]],
+  ['matrix_5frotation_5fy_5',['matrix_rotation_y',['../camera_8hpp.html#a31a4fd801cbbdf9337f0bbb046932230',1,'camera.hpp']]],
+  ['matrix_5fscale_6',['matrix_scale',['../camera_8hpp.html#aa330b78182b3df6304edb244357c59b5',1,'camera.hpp']]],
+  ['matrix_5ftranslation_7',['matrix_translation',['../camera_8hpp.html#a2b2ce5b5614a792ad24de9c8218ae45f',1,'camera.hpp']]],
+  ['metal_5fcontext_2ehpp_8',['metal_context.hpp',['../metal__context_8hpp.html',1,'']]],
+  ['metal_5fcontext_2emm_9',['metal_context.mm',['../metal__context_8mm.html',1,'']]],
+  ['metal_5fcpp_5fimpl_2ecpp_10',['metal_cpp_impl.cpp',['../metal__cpp__impl_8cpp.html',1,'']]],
+  ['metalcontext_11',['MetalContext',['../struct_metal_context.html',1,'']]],
+  ['modelmatrix_12',['modelMatrix',['../struct_uniforms.html#a86e6b08faac9dbc37ac09477f1d6d4d4',1,'Uniforms::modelMatrix'],['../struct_game_object.html#acf2bd91a968cb55fa07340caa394ac87',1,'GameObject::modelMatrix']]],
+  ['mousex_13',['mouseX',['../struct_input_state.html#a3e3ce976a820499731447c245984de06',1,'InputState']]],
+  ['mousey_14',['mouseY',['../struct_input_state.html#a68e28139badfadb049bdfd83de441593',1,'InputState']]],
+  ['movespeed_15',['moveSpeed',['../struct_camera.html#a4ec698428c5abdff6f1ce6982f99a25e',1,'Camera']]],
+  ['mtl_5fprivate_5fimplementation_16',['MTL_PRIVATE_IMPLEMENTATION',['../metal__cpp__impl_8cpp.html#a03a6a3ffe2205256a71b4f3691981df0',1,'metal_cpp_impl.cpp']]],
+  ['mtlfx_5fprivate_5fimplementation_17',['MTLFX_PRIVATE_IMPLEMENTATION',['../metal__cpp__impl_8cpp.html#aceb93875cc251d04cc1139f3006f9f6f',1,'metal_cpp_impl.cpp']]]
+];

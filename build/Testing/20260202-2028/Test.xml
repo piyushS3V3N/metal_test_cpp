@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20260202-2028-Experimental"
+	Name="(empty)"
+	Generator="ctest-4.2.2"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="macOS"
+	Hostname="hachiroku.local"
+	OSRelease="26.2"
+	OSVersion="25C56"
+	OSPlatform="arm64"
+	Is64Bits="1"
+	VendorString="Apple"
+	VendorID="Apple"
+	FamilyID="0"
+	ModelID="0"
+	ModelName="Apple M3 Pro"
+	ProcessorCacheSize="131072"
+	NumberOfLogicalCPU="11"
+	NumberOfPhysicalCPU="11"
+	TotalVirtualMemory="0"
+	TotalPhysicalMemory="18432"
+	LogicalProcessorsPerPhysical="11"
+	ProcessorClockFrequency="0"
+	>
+	<Testing>
+		<StartDateTime>Feb 03 01:58 IST</StartDateTime>
+		<StartTestTime>1770064114</StartTestTime>
+		<TestList/>
+		<EndDateTime>Feb 03 01:58 IST</EndDateTime>
+		<EndTestTime>1770064114</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>
