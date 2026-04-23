@@ -6,6 +6,7 @@ struct MetalContext {
     id<MTLCommandQueue> queue;          ///< The Metal command queue.
     id<MTLRenderPipelineState> pipeline; ///< Default render pipeline for general objects.
     id<MTLRenderPipelineState> landscape_pipeline; ///< Render pipeline specifically for the landscape.
+    id<MTLComputePipelineState> physics_pipeline; ///< Compute pipeline for physics step.
 };
 
 

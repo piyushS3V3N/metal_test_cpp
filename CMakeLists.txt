@@ -1,5 +1,11 @@
 cmake_minimum_required(VERSION 3.20)
 
+# Force Apple Clang on macOS
+if(APPLE)
+    set(CMAKE_C_COMPILER "/usr/bin/clang")
+    set(CMAKE_CXX_COMPILER "/usr/bin/clang++")
+endif()
+
 project(glfw_metal LANGUAGES CXX OBJCXX)
 
 # ---- C++ / ObjC++ standard ----
@@ -36,34 +42,10 @@ target_compile_options(glfw_metal PRIVATE
 # ---- Apple frameworks ----
 target_link_libraries(glfw_metal PRIVATE
     glfw
-    imgui
     "-framework Metal"
     "-framework QuartzCore"
     "-framework Foundation"
 )
-
-# ---- ImGui ----
-file(GLOB IMGUI_SRC
-    "third_party/imgui/*.cpp"
-    "third_party/imgui/backends/imgui_impl_glfw.cpp"
-    "third_party/imgui/backends/imgui_impl_metal.mm"
-)
-
-add_library(imgui STATIC ${IMGUI_SRC})
-
-target_link_libraries(imgui PRIVATE glfw)
-
-
-target_include_directories(imgui PUBLIC
-    "${CMAKE_SOURCE_DIR}/metal-cpp"
-    "third_party/imgui"
-    "third_party/imgui/backends"
-)
-
-target_compile_definitions(imgui PRIVATE
-    IMGUI_IMPL_METAL_CPP
-)
-
 
 # ---- Metal shader compilation ----
 set(METAL_SRC ${CMAKE_SOURCE_DIR}/src/shaders.metal)

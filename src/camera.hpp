@@ -79,9 +79,17 @@ struct Camera {
  */
 inline Camera make_camera(int width, int height) {
     Camera cam{};
-    cam.position = {0.0f, 0.0f, 3.0f};
-    cam.projectionMatrix = matrix_perspective_right_hand(M_PI / 3.0f, (float)width / (float)height, 0.1f, 100.0f);
+    cam.position = {0.0f, 10.0f, 0.0f};
+    cam.projectionMatrix = matrix_perspective_right_hand(M_PI / 3.0f, (float)width / (float)height, 0.01f, 1000.0f);
     return cam;
+}
+
+inline void update_camera_matrices(Camera& cam) {
+    float yawRad = cam.yaw * M_PI / 180.0f;
+    float pitchRad = cam.pitch * M_PI / 180.0f;
+    float cos_pitch = cosf(pitchRad);
+    simd::float3 forward = simd::normalize(simd::float3{ sinf(yawRad) * cos_pitch, sinf(pitchRad), -cosf(yawRad) * cos_pitch });
+    cam.viewMatrix = matrix_look_at_right_hand(cam.position, cam.position + forward, simd::float3{0, 1, 0});
 }
 
 /**

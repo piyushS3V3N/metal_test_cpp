@@ -58,5 +58,13 @@ MetalContext create_metal_context() {
         NSLog(@"Error creating landscape pipeline state: %@", landscapeErr);
     }
 
+    // --- Compute Pipeline for Physics ---
+    id<MTLFunction> physicsFn = [lib newFunctionWithName:@"physics_step"];
+    NSError* computeErr = nil;
+    ctx.physics_pipeline = [ctx.device newComputePipelineStateWithFunction:physicsFn error:&computeErr];
+    if (computeErr) {
+        NSLog(@"Error creating physics compute pipeline state: %@", computeErr);
+    }
+
     return ctx;
 }
